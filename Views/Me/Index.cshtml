@@ -1,0 +1,69 @@
+@{
+    Layout = null;
+    }
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>马勇发（Mafly）</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/Content/Me/style.css">
+  <meta name="description" content="只是马勇发（Mafly）同学个人展示，关于工作、学习、生活和技术，关注方向有开源系统、.Net、Java、Linux等技术和新技术。微博：废马fly" />
+  <meta name="keywords" content="马勇发,mafly,mayongfa,程序员,技术生活,废马fly" />
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="selectivizr-min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=34643340" charset="UTF-8"></script>
+</head>
+<body>
+  <main class="content">
+    <a class="avatar script-changer" href="javascript:;" data-target="welcome"></a>
+    <ul class="bubbles">
+      <li class="bubble-wrapper">
+        <a class="bubble read script-changer" id="read" href="javascript:;" data-target="read">我活着</a>
+      </li>
+      <li class="bubble-wrapper">
+        <a class="bubble design script-changer" href="javascript:;" data-target="design">我折腾</a>
+      </li>
+      <li class="bubble-wrapper">
+        <a class="bubble develop script-changer" href="javascript:;" data-target="develop">我开发</a>
+      </li>
+      <li class="bubble-wrapper">
+        <a class="bubble work script-changer" href="javascript:;" data-target="work">我爱这世界</a>
+      </li>
+      <li class="bubble-wrapper">
+        <a class="bubble life script-changer" href="javascript:;" data-target="life">我享受生活</a>
+      </li>
+    </ul>
+    <ul class="scripts">
+      <li class="script welcome on">
+        <p>我是马勇发 很高兴在这里遇见你</p>
+      </li>
+      <li class="script read">
+        <p>每一天我都会读些<a target="_blank" href="http://tech.sina.com.cn">文</a><a target="_blank" href="http://36kr.com">章</a>或<a target="_blank" href="http://yuedu.baidu.com">书</a> 有时也会<a target="_blank" href="http://blog.mayongfa.cn">写点东西</a></p>
+      </li>
+      <li class="script design">
+        <p>爸妈都告诉我 好好<a target="_blank" href="#">工作</a> 别瞎折腾</p>
+      </li>
+      <li class="script develop">
+        <p>我喜欢敲代码 所以我是<a target="_blank" href="https://mafly.cnblogs.com">程序猿</a> 没女朋友 尽管对<a target="_blank" href="https://github.com/mafly">开源世界</a>还没贡献</p>
+      </li>
+      <li class="script work">
+        <p>我爱这世界 对新事物有着最原始的冲动 希望和你创造更多</p>
+      </li>
+      <li class="script life">
+        <p>学习 技术 电影 旅行是我生活的关键词 想要一起的话 <a target="_blank" href="mailto:0@mayongfa.cn">写封邮件给我</a></p>
+      </li>
+    </ul>
+  </main>
+
+  <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript">
+      $('.script-changer').on('click', function (e) {
+          $('.script.' + $(e.target).data('target'))
+            .addClass('on')
+            .siblings('.script')
+            .removeClass('on');
+      });
+  </script>
+</body>
+</html>
